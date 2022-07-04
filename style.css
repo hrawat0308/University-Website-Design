@@ -255,3 +255,27 @@ footer :nth-child(2){
     height: 50%;
     border-radius: 3px;
 }
+
+#contact-section2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    text-align: center;
+}
+#contact-us-form > input{
+    
+    height: 40px;
+    border : 1px solid #FF869E;
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: none;
+    font-size: 0.8rem;
+    color: #898AA6;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
