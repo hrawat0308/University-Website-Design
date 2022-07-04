@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
 }
 a{
     color: inherit;
@@ -57,7 +58,7 @@ header{
 #banner-tagline{
     font-size: 1.3rem;
 }
-#banner-button{
+#banner-button,#campus-button{
     border: 1px solid white;
     width: 200px;
     height: 40px;
@@ -68,17 +69,17 @@ header{
 }
 
 
-#courses{
+#courses,#Global-Campus{
     width: 100%;
     margin-top: 7%;
     text-align: center;
 }
 
-#courses-heading{
+#courses-heading,#global-campus-heading{
     font-size: 1.8rem;
 }
-#courses-tagline{
-    color: grey;
+#courses-tagline,#global-campus-tagline{
+    color: #898AA6;
     margin-top: -1%;
 }
 #course-grid{
@@ -91,6 +92,17 @@ header{
     column-gap: 5%;
 }
 
+@media screen and (max-width : 800px){
+    #course-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #course-grid > div{
+        margin-top: 1%;
+    }
+
+}
+
 #course-grid > div {
     background-color: #FBC5C5;
     padding: 10px;
@@ -101,6 +113,56 @@ header{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    color: grey;
+    color: #898AA6;
     line-height: 1.5;
+}
+
+#global-campus-image{
+    width: 80%;
+    height: 300px;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("./images/meetingHome.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#campus-image-content{
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 5%;
+}
+#campus-image-content :nth-child(2){
+    margin-top: -2%;
+}
+
+footer{
+    width: 100%;
+    margin-top: 7%;
+    text-align: center;
+    background-color: #F0EBE3;
+    padding-top: 4%;
+}
+
+footer :first-child{
+    font-size: 1.4rem;
+}
+footer :nth-child(2){
+    margin-top: 3%;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: #898AA6;
+}
+
+#social-media{
+    padding-bottom: 2%;
+}
+
+#social-media > img{
+    cursor: pointer;
+    padding-right: 2%;
+    padding-right: 2%;
 }
